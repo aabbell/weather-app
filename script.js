@@ -5,21 +5,6 @@ const para = document.querySelector('p')
 const weatherTab = document.querySelector('.weatherTab')
 const cancle = document.getElementById('cancle')
 
-// button.addEventListener('click', () => {
-//     const inputValue = input.value
-//     console.log(inputValue)
-//     fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${inputValue}?key=HACPZMCYQHNUJJNMQGKEJFFJH` , {mode : 'cors'})
-//         .then(function(response){
-//             return response.json()
-//         })
-//         .then(function(response){
-            
-//             console.log(response.currentConditions.temp)
-//             para.textContent = response.currentConditions.temp
-//         })
-//         .catch(error => console.log("error fetching the weather"))
-
-// })
 
 button.addEventListener('click', getWeather)
 
@@ -45,7 +30,7 @@ function displayData(responseData){
 }
 
 function exitTab(){
-    cancle.addEventListener('click', () => {
+    cancle.addEventListener('click', function(){
         weatherTab.style.display = 'none'
     })
 }

@@ -28,6 +28,7 @@ p{
     font-size: 30px;
     font-weight: 600;
     color: rgba(190, 5, 5, 0.616);
+    text-align: center;
 }
 
 
@@ -35,10 +36,23 @@ button{
     background-color: rgba(190, 5, 5, 0.616);
     border: none;
     border-radius: 4px;
+    cursor:pointer;
 }
     
 #cancle{
-    text-align: center;
-    margin-bottom: 5px;
-    
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 70px;
+    margin-bottom: 10px;
+    text-align: center; 
+    height: 20px;  
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+
 }
